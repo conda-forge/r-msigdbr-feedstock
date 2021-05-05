@@ -1,4 +1,4 @@
-{% set version = "7.2.1" %}
+{% set version = "7.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/msigdbr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/msigdbr/msigdbr_{{ version }}.tar.gz
-  sha256: 01b770636445f073678ada757ef07ba3348c02275e3d57f325f69ec277ba82e5
+  sha256: 21cb634e578c8cbc3c8f2c0cf46890356836a481382087a093f322b395287580
 
 build:
   merge_build_host: true  # [win]

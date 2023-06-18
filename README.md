@@ -1,11 +1,11 @@
-About r-msigdbr
-===============
+About r-msigdbr-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-msigdbr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/igordot/msigdbr
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-msigdbr-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides the 'Molecular Signatures Database' (MSigDB) gene sets typically used with the 'Gene Set Enrichment Analysis' (GSEA) software (Subramanian et al. 2005 <doi:10.1073/pnas.0506580102>, Liberzon et al. 2015 <doi:10.1016/j.cels.2015.12.004>) in a standard R data frame with key-value pairs. Included are the original human gene symbols and Entrez IDs as well as the equivalents for various frequently studied model organisms such as mouse, rat, pig, fly, and yeast.
 

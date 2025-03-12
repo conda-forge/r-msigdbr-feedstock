@@ -1,4 +1,4 @@
-{% set version = "7.5.1" %}
+{% set version = "10.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/msigdbr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/msigdbr/msigdbr_{{ version }}.tar.gz
-  sha256: dc30487bdf3594425ae9faec1ca0d7d0cd7278f4f177689133f92880e74acaca
+  sha256: 08d7e9b460a248f48b9e586dd126e713c1cef97a0cc512f943e4b843ce07a1b6
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/

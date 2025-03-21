@@ -23,20 +23,22 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-babelgene
-    - r-dplyr >=0.7.0
-    - r-magrittr
+    - r-assertthat
+    - r-babelgene >=22.9
+    - r-dplyr >=1.1.1
+    - r-lifecycle
     - r-rlang
     - r-tibble
-    - r-tidyselect
+    - r-tidyselect >=1.2.0
   run:
     - r-base
-    - r-babelgene
-    - r-dplyr >=0.7.0
-    - r-magrittr
+    - r-assertthat
+    - r-babelgene >=22.9
+    - r-dplyr >=1.1.1
+    - r-lifecycle
     - r-rlang
     - r-tibble
-    - r-tidyselect
+    - r-tidyselect >=1.2.0
 
 test:
   commands:

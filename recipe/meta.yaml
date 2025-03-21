@@ -1,4 +1,4 @@
-{% set version = "10.0.0" %}
+{% set version = "10.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/msigdbr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/msigdbr/msigdbr_{{ version }}.tar.gz
-  sha256: 08d7e9b460a248f48b9e586dd126e713c1cef97a0cc512f943e4b843ce07a1b6
+  sha256: ce4f74195ad2bf6a8be6fb1f9137887b9b11667a45dc8f1300028f19afb0214a
 
 build:
   number: 0
@@ -23,20 +23,22 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-babelgene
-    - r-dplyr >=0.7.0
-    - r-magrittr
+    - r-assertthat
+    - r-babelgene >=22.9
+    - r-dplyr >=1.1.1
+    - r-lifecycle
     - r-rlang
     - r-tibble
-    - r-tidyselect
+    - r-tidyselect >=1.2.0
   run:
     - r-base
-    - r-babelgene
-    - r-dplyr >=0.7.0
-    - r-magrittr
+    - r-assertthat
+    - r-babelgene >=22.9
+    - r-dplyr >=1.1.1
+    - r-lifecycle
     - r-rlang
     - r-tibble
-    - r-tidyselect
+    - r-tidyselect >=1.2.0
 
 test:
   commands:

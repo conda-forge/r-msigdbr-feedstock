@@ -1,4 +1,4 @@
-{% set version = "10.0.2" %}
+{% set version = "24.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/msigdbr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/msigdbr/msigdbr_{{ version }}.tar.gz
-  sha256: 926dfef535da964cc58aef58bfdedc137fa42d10a5b51619cf537f848c36ee02
+  sha256: 2a4470512baa5129f534510f70801876242010e1cc38a18fb13181c7ab0b3166
 
 build:
   number: 0
@@ -21,10 +21,12 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-assertthat
     - r-babelgene >=22.9
+    - r-curl
     - r-dplyr >=1.1.1
     - r-lifecycle
     - r-rlang
@@ -34,6 +36,7 @@ requirements:
     - r-base
     - r-assertthat
     - r-babelgene >=22.9
+    - r-curl
     - r-dplyr >=1.1.1
     - r-lifecycle
     - r-rlang

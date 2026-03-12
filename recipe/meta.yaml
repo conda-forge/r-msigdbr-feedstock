@@ -1,4 +1,4 @@
-{% set version = "25.1.1" %}
+{% set version = "26.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/msigdbr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/msigdbr/msigdbr_{{ version }}.tar.gz
-  sha256: 2695929da0226b8ad01a6dd27eea70673c4673c7cff21e7600764dd8e7fdd002
+  sha256: c872e4b9be7102ff3ea083c6187ebab9dcf7ad7b9916d1bccf906efffa4ae02f
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -51,8 +51,8 @@ test:
 about:
   home: https://github.com/igordot/msigdbr
   license: MIT
-  summary: Provides the 'Molecular Signatures Database' (MSigDB) gene sets typically used with the 'Gene Set Enrichment Analysis' (GSEA) software (Subramanian et al. 2005 <doi:10.1073/pnas.0506580102>, Liberzon et al. 2015 <doi:10.1016/j.cels.2015.12.004>) in a standard R data frame with key-value pairs. Included are the
-    original human gene symbols and Entrez IDs as well as the equivalents for various frequently studied model organisms such as mouse, rat, pig, fly, and yeast.
+  summary: Provides the 'Molecular Signatures Database' (MSigDB) gene sets typically used with the 'Gene Set Enrichment Analysis' (GSEA) software (Subramanian et al. 2005 <doi:10.1073/pnas.0506580102>, Liberzon et al. 2015 <doi:10.1016/j.cels.2015.12.004>) in a standard R data frame with key-value pairs. Included are 
+    the original human gene symbols and Entrez IDs as well as the equivalents for various frequently studied model organisms such as mouse, rat, pig, fly, and yeast.
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT

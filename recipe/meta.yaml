@@ -1,4 +1,4 @@
-{% set version = "26.1.0" %}
+{% set version = "26.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/msigdbr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/msigdbr/msigdbr_{{ version }}.tar.gz
-  sha256: c872e4b9be7102ff3ea083c6187ebab9dcf7ad7b9916d1bccf906efffa4ae02f
+  sha256: b66ffc38bde56230da60f6d9af3dd363d0cb7a0b4b7693e5001c3634cb5eb58f
 
 build:
   number: 0
